@@ -12,7 +12,7 @@ DISTANCE = 0x07
 
 
 def lightning_distance():
-	dist = bus.read_byte(ADDRESS, DISTANCE)
+	dist = bus.read_byte_data(ADDRESS, DISTANCE)
 	return dist
 
 if __name__ == '__main__':
